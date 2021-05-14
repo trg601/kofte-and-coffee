@@ -13,3 +13,12 @@ p.copyrightTag {
     float: right;
     padding: 5px 25px;
 }
+
+a.footerLink {
+    text-decoration: none;
+    color: white;
+}
+
+a.footerLink:hover {
+    color: gray;
+}

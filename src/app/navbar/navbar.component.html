@@ -1,7 +1,11 @@
-<a routerLink=""><img class="navLogo" src="assets/img/logo.png" alt="Köfte & Coffee"/></a>
-<a class="navCart {{isActive('cart')}}" routerLink="cart"><img class="navCart" src="assets/img/bag.png" alt="Cart"/></a>
-<div class=navButtons>
-    <a class="navButton {{isActive('home')}}" routerLink="home">Home</a>
-    <a class="navButton {{isActive('menu')}}" routerLink="menu">Menu / Order Online</a>
-    <a class="navButton {{isActive('about')}}" routerLink="about">About Us</a>
+<div class="navBar">
+    <div class="navLogo">
+        <a routerLink="/"><img class="navLogo" src="assets/img/logo.png" alt="Köfte & Coffee"/></a>
+    </div>
+    <a class="navCart {{isActive('cart')}}" routerLink="/cart"><img class="navCart" src="assets/img/bag.png" alt="Cart"/></a>
+    <div class=navButtons>
+        <a class="navButton {{isActive('home')}}" routerLink="/">Home</a>
+        <a class="navButton {{isActive('menu')}}" routerLink="/menu">Menu / Order Online</a>
+        <a class="navButton {{isActive('about')}}" routerLink="/about">About Us</a>
+    </div>
 </div>
