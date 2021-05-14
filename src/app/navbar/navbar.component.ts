@@ -16,4 +16,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isActive(elemName: string): string {
+    if (this.activeElement == elemName) return "active";
+    else return "";
+  }
+
 }

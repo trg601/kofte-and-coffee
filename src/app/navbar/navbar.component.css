@@ -1,61 +1,67 @@
-div.navBar {
-    background-color: red;
+:host {
+    background-color: #110909;
     overflow: hidden;
-    padding: 0;
-    margin: 0;
 }
 
-div.navButtons {
-    background-color: firebrick;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+img.navLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    padding: 10px;
 }
 
-p.navTitle {
-    text-align: center;
-    font-size: 200%;
-    font-family: 'Sarina', cursive;
-    -webkit-text-stroke: 1px black;
-	-webkit-text-fill-color: white;
-    margin: 15px;
-    padding: 0;
+img.navLogo:hover {
+    cursor: pointer;
 }
 
 a.navCart {
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-a.navCart:hover {
-    background-color: coral;
-    color: black;
+    border-radius: 6px;
+    position: fixed;
+    right: 20px;
+    top: 17px;
 }
 
 a.navCart.active {
-    background-color: maroon;
-    color: white;
+    background-color: #33221e;
+}
+
+a.navCart:hover {
+    background-color: #8c695f;
+    cursor: pointer;
+}
+
+img.navCart {
+    padding: 10px;
+}
+
+img.navCart:hover {
+    filter: invert(1);
+}
+
+div.navButtons {
+    background-color: #271717;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 a.navButton {
-    float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    border-radius: 6px;
+    padding: 5px 15px;
+    margin: 5px;
     text-decoration: none;
-    font-size: 17px;
-}
-
-a.navButton:hover {
-    background-color: coral;
-    color: black;
+    font-size: 25px;
 }
 
 a.navButton.active {
-    background-color: maroon;
+    background-color: #33221e;
     color: white;
+}
+
+a.navButton:hover {
+    background-color: #8c695f;
+    color: black;
 }

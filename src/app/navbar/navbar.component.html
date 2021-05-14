@@ -1,9 +1,7 @@
-<div class="navBar">
-    <p class="navTitle">Kofte & Coffee</p>
-    <div class=navButtons>
-        <a class="navCart {{activeElement=='cart'?'active':''}}" href="cart">🛒</a>
-        <a class="navButton {{activeElement=='home'?'active':''}}" href="">Home</a>
-        <a class="navButton {{activeElement=='menu'?'active':''}}" href="menu">Menu / Order Online</a>
-        <a class="navButton {{activeElement=='about'?'active':''}}" href="about">About</a>
-    </div>
+<a routerLink=""><img class="navLogo" src="assets/img/logo.png" alt="Köfte & Coffee"/></a>
+<a class="navCart {{isActive('cart')}}" routerLink="cart"><img class="navCart" src="assets/img/bag.png" alt="Cart"/></a>
+<div class=navButtons>
+    <a class="navButton {{isActive('home')}}" routerLink="home">Home</a>
+    <a class="navButton {{isActive('menu')}}" routerLink="menu">Menu / Order Online</a>
+    <a class="navButton {{isActive('about')}}" routerLink="about">About Us</a>
 </div>

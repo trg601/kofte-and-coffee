@@ -1,0 +1,15 @@
+:host {
+    background-color: #110909;
+    text-align: left;
+    color: white;
+}
+
+table.footerTable {
+    float: left;
+    border-spacing: 50px 5px;
+}
+
+p.copyrightTag {
+    float: right;
+    padding: 5px 25px;
+}
