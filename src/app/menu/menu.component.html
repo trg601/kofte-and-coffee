@@ -1,2 +1,17 @@
 <app-navbar activeElement=menu></app-navbar>
-<p>menu works!</p>
+
+<div class="menuItems">
+    <table>
+        <tr *ngFor="let item of menu.items">
+            <app-item [item]="item"></app-item>
+        </tr>
+    </table>
+</div>
+
+<div class="order">
+    <table>
+        <tr *ngFor="let item of getCartItems()">
+            <app-cart-item [item]="item"></app-cart-item>
+        </tr>
+    </table>
+</div>
