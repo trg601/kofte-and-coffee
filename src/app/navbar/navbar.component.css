@@ -1,4 +1,7 @@
 .navBar {
+    z-index: 3;
+    position: sticky;
+    top: 0;
     background-color: #110909;
     overflow: hidden;
 }
@@ -46,7 +49,7 @@ img.navCart:hover {
 
 div.navButtons {
     background-color: #271717;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-evenly;
 }
