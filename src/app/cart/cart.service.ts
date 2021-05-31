@@ -10,6 +10,7 @@ export class CartService {
   constructor() {
     this.cart = new Cart();
     this.cart.addToCart(new Item("Köfte", 12, 400, "", ""));
+    this.cart.addToCart(new Item("Köfte", 12, 400, "", ""));
   }
 
   getCart(): Cart {

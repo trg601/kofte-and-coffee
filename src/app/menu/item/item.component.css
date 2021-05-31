@@ -1,10 +1,24 @@
 div.item {
-    background-color: lightgray;
-    border-radius: 5px;
+    background-color: #271717;
+    color: white;
+    border-radius: 3px;
+    max-width: 250px;
     padding: 1px;
-    padding-left: 15px;
-    margin: 5px;
+    padding-left: 10px;
+    margin: 3px;
     padding-right: 10px;
+}
+
+.box{
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.box>*{
+    flex: 1 1 80px;
 }
 
 span.price {
