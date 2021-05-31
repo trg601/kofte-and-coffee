@@ -1,24 +1,21 @@
 div.item {
     background-color: #271717;
     color: white;
-    border-radius: 3px;
-    max-width: 250px;
-    padding: 1px;
+    /* border-radius: 3px; */
+    /* max-height: 200px;
+    max-width: 200px; 
+    min-width: 50px;
+    min-height: 200px; */
+    height: 200px;
+    width: 200px;
+    /* padding: 1px;
     padding-left: 10px;
     margin: 3px;
-    padding-right: 10px;
-}
-
-.box{
-    max-height: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}
-
-.box>*{
-    flex: 1 1 80px;
+    padding-right: 10px; */
+     -webkit-column-break-inside: avoid; /*Chrome, Safari */
+     page-break-inside: avoid;           /*Theoretically FF 20+ */
+     break-inside: avoid-column;         /*IE 11 */
+     display:table;    
 }
 
 span.price {
@@ -28,3 +25,6 @@ span.price {
 button.add {
     float: right;
 }
+
+
+/*a*/

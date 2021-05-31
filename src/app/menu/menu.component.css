@@ -1,15 +1,34 @@
 
+
 div.menuItems {
-    float: left;
-    width: calc(100% - 25em);
-    background-color:  rgb(0, 0, 0);
+    /* float: left; */
+    /* width: 100% -25em; */
+    height: 5000px;
+    background-color: black;
+    /* display: flex;
+    flex-flow: column wrap;
+    flex-direction: column; */
+    /* background-color: lightblue; */
+    /* grid-template-columns: 3;
+    grid-template-rows: repeat(auto-fill, 120px);
+    grid-row-gap: .5em;
+    grid-column-gap: 1em; */
+    margin: auto;
+    width: 800px;
+    padding: 10px;
 }
 
-div.order {
+div.itemGrid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+/* div.order {
     position: fixed;
     right: 0;
     width: 25em;
-    height: 100%;
+    height: 8000px;
     background-color: rgb(0, 0, 0);
     box-shadow: -1px 3px 4px 3px rgba(0, 0, 0, 0.4);
-}
+} */

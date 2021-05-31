@@ -30,25 +30,28 @@
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .cart-quantity {
     width: 35%;
+    color: white;
 }
 
 .cartTotal {
     font-weight: bolder;
     font-size: 1.15em;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-right: 10px;
 }
 .price {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1em;
 }
 .btn-purchase {
     display: block;
     margin:  auto;
     font-size: 1.25em;
+    color: white;
+    background-color: #271717;
 } 
