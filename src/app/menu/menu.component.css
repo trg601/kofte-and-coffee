@@ -15,15 +15,28 @@ div.menuItems {
     grid-column-gap: 1em; */
     margin: auto;
     width: 800px;
-    padding: 10px;
 }
 
-div.itemGrid{
+.itemGrid{
+    /* 
+    
+    flex-flow: column-wrap;
+    justify-content: space-around;
+    
+    
+    padding: 10px; */
+    background-color: black;
+    margin: auto;
+    width: auto;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
 }
+
+
+
 /* div.order {
     position: fixed;
     right: 0;
