@@ -1,5 +1,6 @@
 div.item {
-    
+    font-family:Helvetica;
+    font-size: 14px;
     color: white;
     /* border-radius: 3px; */
     /* max-height: 200px;
@@ -30,6 +31,8 @@ img.item {
 }
 
 p.description {
+    display:flex;
+    height: 90px;
     text-align: center;
     background-color: rgba(0,0,0,0);
     color: rgba(255,255,255,0);

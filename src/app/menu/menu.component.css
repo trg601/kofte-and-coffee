@@ -29,6 +29,7 @@ div.menuItems {
     background-color: black;
     margin: auto;
     width: 45%;
+    max-width: 800px;
     height: auto;
     padding: 10px;
     display: flex;
