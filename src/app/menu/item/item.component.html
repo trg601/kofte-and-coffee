@@ -9,7 +9,7 @@
     </p>
     <p class="calories">
         {{item.calories}} cal
-        <button class="add">Add to Order</button>
+        <button class="add" (click)="addToOrder.emit(this.item)">Add to Order</button>
     </p>
 
 </div>

@@ -17,4 +17,14 @@ export class Cart {
         this.items.push(new CartItem(item));
     }
 
+    public removeItem(item: Item): void {
+        let i = 0;
+        for (let cItem of this.items) {
+            if (item == cItem.item) {
+                this.items.splice(i, 1);
+                return;
+            }
+            i++;
+        }
+    }
 }
