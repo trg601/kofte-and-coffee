@@ -72,8 +72,38 @@ a.modalCloseButton:hover {
 
 .modalTitle {
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 p.modalItemLabel {
     font-size: large;
+}
+
+button.modalButton {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 5px;
+    background-color: white;
+    border-color: lightslategray;
+    border-radius: 5px;
+}
+
+button.modalButton:hover {
+    background-color: #8c695f;
+    color: white;
+    cursor: pointer;
+}
+
+div.modalField {
+    display: flex;
+    justify-content: flex-start;
+}
+
+select.modalSelect {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 5px;
+    background-color: white;
+    border-color: lightslategray;
+    border-radius: 5px;
 }

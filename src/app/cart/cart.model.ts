@@ -9,7 +9,7 @@ export class Cart {
     
     public addToCart(item: Item): void {
         for (let cItem of this.items) {
-            if (item == cItem.item) {
+            if (item === cItem.item && cItem.option.reduce((a, b) => a + b, 0) == 0) {
                 cItem.quantity++;
                 return;
             }
@@ -17,11 +17,23 @@ export class Cart {
         this.items.push(new CartItem(item));
     }
 
-    public removeItem(item: Item): void {
+    public removeItem(item: CartItem): void {
         let i = 0;
         for (let cItem of this.items) {
-            if (item == cItem.item) {
+            if (item === cItem) {
                 this.items.splice(i, 1);
+                return;
+            }
+            i++;
+        }
+    }
+
+    public setQuantity(item: CartItem, quantity: number): void {
+        if (quantity < 1) quantity = 1;
+        let i = 0;
+        for (let cItem of this.items) {
+            if (item === cItem) {
+                cItem.quantity = quantity;
                 return;
             }
             i++;
