@@ -5,8 +5,8 @@ export class Menu {
 
     constructor() {
         let item: Item = new Item("Köfte", 12, 400, "Our namesake. Inspired by the finest restaurants in Istanbul. Comes with three skewers of your choice of meat (Beef or Lamb) and a side of rice.","https://static.wixstatic.com/media/0462a6_d472090ebdff4a40b3af2d64dd99b9d4~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp");
-        this.items.push(item);
         item.addOption("Meat", ["Beef", "Lamb"]);
+        this.items.push(item);
         item = new Item("Döner Kebap", 11, 310, "Shaved vertical spit-roasted meat served in a wrap with lettuce, tomato, onions and a white sauce.                        ","https://static.wixstatic.com/media/0462a6_55f2c287f4144c4da3974cdef822aa21~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp");
         item.addOption("Meat", ["Lamb", "Beef", "Turkey"]);
         this.items.push(item);
@@ -29,6 +29,20 @@ export class Menu {
         this.items.push(new Item("Baklava", 5, 440, "Layered butter filled with crushed pistachios and dipped in honey                                                              ", "https://static.wixstatic.com/media/0462a6_f987b3ed722b45fa82fd7a71946c22f4~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"));
         this.items.push(new Item("Walnut Baklava", 5, 380, "Layered butter filled with crushed walnuts and dipped in honey                                                              ", "https://static.wixstatic.com/media/0462a6_00b68ab719274346988a9d8f4f6e4a34~mv2.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"));
         this.items.push(new Item("Durum Baklava", 5, 400, "Layered butter filled with crushed pistachios and dipped in honey                                                              ", "https://static.wixstatic.com/media/0462a6_bc40f4c703374fbfb9e5d50313af8937~mv2.png/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp"));
-        
+        //Coffee
+        item = new Item("Espresso", 4, 200, "Concentrated single or double shot of our signature dark roast coffee", "/assets/img/item/espresso.png");
+        item.addOption("Size", ["Medium", "Small", "Large"]);
+        item.addOption("Strength", ["Single Shot", "Double Shot"]);
+        this.items.push(item);
+
+        item = new Item("Americano", 4, 180, "Our signature dark roast coffee espresso diluted with hot water", "/assets/img/item/americano.jpg");
+        item.addOption("Size", ["Medium", "Small", "Large"]);
+        item.addOption("Strength", ["Single Shot", "Double Shot"]);
+        this.items.push(item);
+
+        item = new Item("Cinnamon Latte", 5, 300, "Our signature dark roast coffee espresso with steamed milk and a hint of cinnamon", "/assets/img/item/latte.jpg");
+        item.addOption("Size", ["Medium", "Small", "Large"]);
+        this.items.push(item);
+
     }
 }

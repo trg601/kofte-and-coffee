@@ -1,5 +1,7 @@
 <app-navbar activeElement=menu></app-navbar>
 
+<body>
+
 <!-- <div class="menuItems"> -->
     <ul class = "itemGrid">
         <li *ngFor="let item of menu.items">
@@ -16,3 +18,5 @@
     <p class="cartTotal">Total: ${{getTotal()}}</p>
     <a routerLink="/cart"><button class="checkoutButton">Checkout</button></a>
 </div>
+
+</body>
