@@ -1,5 +1,5 @@
 div.item {
-    font-family:Helvetica;
+    font-family:sans-serif;
     font-size: 14px;
     color: white;
     /* border-radius: 3px; */
@@ -9,17 +9,18 @@ div.item {
     min-height: 200px; */
     height: 200px;
     width: 200px;
-    padding: 1px;
+    padding: 10px;
     padding-left: 10px;
-    margin: 3px;
+    margin: 8px;
     padding-right: 10px;
      -webkit-column-break-inside: avoid; /*Chrome, Safari */
 }
 
 p.name {
     background-color: rgba(0,0,0,.8);
-    padding-left: 24px;
-    padding-right: 24px;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 5px;
     padding-top: 5px;
 
@@ -31,7 +32,8 @@ img.item {
 }
 
 p.description {
-    display:flex;
+    display: flex;
+    padding: 5px;
     height: 90px;
     text-align: center;
     background-color: rgba(0,0,0,0);
@@ -53,14 +55,17 @@ span.price {
 button.add {
     float:right;
     border-color: rgb(255, 255, 255);
+    font-size: 12px;
     background-color: black;
     color: white;
+    border-radius: 5px;
 }
 
 p.calories{
     background-color: rgba(0,0,0,.8);
-    padding-top: 3px;
-    padding-bottom: 5px;
-    padding-left:5px;
-    padding-right:5px;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-left:8px;
+    padding-right:8px;
 }
