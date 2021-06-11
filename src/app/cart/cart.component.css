@@ -1,57 +1,93 @@
 .header {
     font-weight: bolder;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 2.5em;
+    font-family: fantasy;
+    color: lightgray;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 3em;
 }
 
-.cart-header {
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    font-size: 1.25em; 
-}
-.cart-column {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    margin-right: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
-.cart-row {
-    display: flex;
-}
-
-.cart-item {
-    width: 45%;
-}
-
-.cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: rgb(255, 255, 255);
-}
-
-.cart-quantity {
-    width: 35%;
-    color: white;
+.orderTot{
+    margin-left: 25px;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: lightgray;
+    box-shadow: -1px 3px 4px 3px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    border-style: outset;
+    width: calc(100% - 430px);
+    min-height: 400px;
 }
 
 .cartTotal {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: bolder;
     font-size: 1.15em;
-    color: rgb(255, 255, 255);
-    margin-right: 10px;
+    color: black;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif ;
 }
 .price {
-    color: rgb(255, 255, 255);
+    float: right;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: rgb(0, 0, 0);
     font-size: 1em;
+}
+
+.payment {
+    width: 360px;
+    height: 250px;
+    right: 0;
+    bottom: 20px;
+    right: 5px;
+    position: fixed;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: lightgray;
+    box-shadow: -1px 3px 4px 3px rgba(0, 0, 0, 0.4);
+}
+.credit-card {
+    padding-left: 10px;
+}
+.cvv-input input {
+    float: left;
+    width: 145px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: #fff;
+}
+ 
+.cvv-details {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+}
+ 
+.cvv-details p {
+    margin-top: 6px;
+}
+.btnHeaderText{
+    font-weight: bolder;
+    text-align: center;
+    font-size:0.75em;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 .btn-purchase {
     display: block;
     margin:  auto;
-    font-size: 1.25em;
+    font-size:1.25em;
+    font-family: Arial, Helvetica, sans-serif ;
     color: white;
     background-color: #271717;
+    padding: 5px 40px;
+    border-radius:  25px;
 } 
