@@ -56,3 +56,46 @@ div.order {
     margin: 10px;
     color: white;
 }
+
+div.cartList {
+    height: calc(100% - 130px);
+    overflow-y: auto;
+}
+
+.cartTotal {
+    font-size: medium;
+    float: right;
+    color: lightgray;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.checkoutButton {
+    font-size: large;
+    padding: 5px;
+    width: calc(100% - 10px);
+    margin: 5px;
+    background-color: white;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+.checkoutButton:hover {
+    background-color: #8c695f;
+    color: white;
+    cursor: pointer;
+}
+
+button.itemButton {
+    float: right;
+    margin-left: 5px;
+    background-color: white;
+    border-color: lightslategray;
+    border-radius: 5px;
+}
+
+button.itemButton:hover {
+    background-color: #8c695f;
+    color: white;
+    cursor: pointer;
+}

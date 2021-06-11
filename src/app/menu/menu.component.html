@@ -10,5 +10,9 @@
 
 <div class="order">
     <h3 class="cartTitle">Cart</h3>
-    <app-cart-list></app-cart-list>
+    <div class="cartList">
+        <app-cart-list></app-cart-list>
+    </div>
+    <p class="cartTotal">Total: ${{getTotal()}}</p>
+    <a routerLink="/cart"><button class="checkoutButton">Checkout</button></a>
 </div>
