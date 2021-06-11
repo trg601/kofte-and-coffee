@@ -1,5 +1,5 @@
 <table class="list">
     <tr *ngFor="let item of getCartItems()">
-        <app-cart-item [item]="item" (removeItem)="removeItem($event)"></app-cart-item>
+        <app-cart-item [item]="item" (removeItem)="removeItem($event)" (setQuantity)="setQuantity($event)"></app-cart-item>
     </tr>
 </table>

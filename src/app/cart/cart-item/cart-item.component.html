@@ -2,10 +2,13 @@
     <p class="name">
         <span class="quantity">{{item.quantity}}</span>
         {{item.item.name}}
-        <button class="itemButton" (click)="removeItem.emit(this.item.item)">remove</button>
+        <button class="itemButton" (click)="removeItem.emit(this.item)">remove</button>
         <button class="itemButton" (click)="openEdit()">edit</button>
         <span class="price">${{item.getPrice()}}</span>
     </p>
+    <div>
+        {{getChoiceList()}}
+    </div>
 </div>
 
 <!-- Edit item popup -->
@@ -16,6 +19,16 @@
     <div class="editInnerBox">
         <a class="modalCloseButton" (click)="closeEdit()">&times;</a>
         <h3 class="modalTitle">{{item.item.name}}</h3>
-        <p class="modalItemLabel">Quantity: {{item.quantity}}</p>
+        <div class="modalField">
+            <p class="modalItemLabel">Quantity: {{item.quantity}}</p>
+            <button class="modalButton" (click)="setQuantity.emit({item: this.item, quantity: this.item.quantity+1})">+</button>
+            <button class="modalButton" (click)="setQuantity.emit({item: this.item, quantity: this.item.quantity-1})">-</button>
+        </div>
+        <div class="modalField" *ngFor="let options of getOptions(); let i=index">
+            <p class="modalItemLabel">{{options.name}}:</p>
+            <select class="modalSelect" (change)="updateChoice(i, $event.target.value)">
+                <option *ngFor="let option of options.options; let i=index" value={{i}}>{{option}}</option>
+            </select>
+        </div>
     </div>
 </div>
