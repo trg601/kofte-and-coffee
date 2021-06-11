@@ -2,6 +2,20 @@
     <p class="name">
         <span class="quantity">{{item.quantity}}</span>
         {{item.item.name}}
-        <span class="price">${{item.item.price}}</span>
+        <button class="itemButton" (click)="removeItem.emit(this.item.item)">remove</button>
+        <button class="itemButton" (click)="openEdit()">edit</button>
+        <span class="price">${{item.getPrice()}}</span>
     </p>
+</div>
+
+<!-- Edit item popup -->
+<a (click)="closeEdit()">
+    <div #modal class="modal"></div>
+</a>
+<div #editWindow class="editWindow">
+    <div class="editInnerBox">
+        <a class="modalCloseButton" (click)="closeEdit()">&times;</a>
+        <h3 class="modalTitle">{{item.item.name}}</h3>
+        <p class="modalItemLabel">Quantity: {{item.quantity}}</p>
+    </div>
 </div>
